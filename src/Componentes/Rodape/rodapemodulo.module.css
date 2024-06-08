@@ -1,0 +1,18 @@
+.rodape {
+  width: 100vw; /* 100% da largura da viewport */
+  background-color: #000; /* Fundo preto */
+  padding: 20px;
+  color: #fff; /* Texto branco */
+  text-align: center;
+  box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+.rodape h2 {
+  margin: 0; /* Remove a margem do h2 */
+  padding: 0; /* Remove o padding do h2 */
+}
+
+.copyright {
+  font-size: 14px; /* Tamanho da fonte */
+  margin: 10px 0 0 0; /* Espaçamento superior */
+}

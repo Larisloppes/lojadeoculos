@@ -1,0 +1,92 @@
+/* Produtos */
+.secao-produtos {
+  width: 100%; /* Ajusta a largura para 100% */
+  padding: 100px 20px; /* Ajusta o espaçamento interno */
+  text-align: center;
+}
+
+.container-produtos {
+  width: 100%; /* Ajusta a largura para 100% */
+  max-width: 1024px; /* Define a largura máxima de 1024px */
+  margin: 0 auto; /* Centraliza o container */
+  display: grid; /* Use CSS Grid */
+  grid-template-columns: repeat(2, 1fr); /* Cria duas colunas iguais */
+  gap: 20px; /* Espaçamento entre os itens do grid */
+}
+
+.box-produto {
+  background-color: #F6F6F6;
+  padding: 20px 10px; /* Ajusta o espaçamento interno */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 20px -4px rgba(0, 0, 0, 0.2); /* Adiciona a sombra conforme especificado */
+}
+
+.box-produto h4 {
+  margin: 0;
+  font-size: 24px; /* Ajustei o tamanho da fonte */
+  font-weight: bold;
+}
+
+.secao-produtos h5 {
+  margin: 20px 0; /* Ajustei o espaçamento superior e inferior */
+  font-size: 20px; /* Aumentei o tamanho da fonte */
+  font-weight: bold; /* Ajustei o peso da fonte */
+}
+
+.box-produto img {
+  width: 100%; /* Ajusta a largura da imagem para 100% do contêiner */
+  height: auto;
+  max-height: 150px; /* Define uma altura máxima para a imagem */
+  object-fit: contain; /* Garante que a imagem se ajuste dentro do contêiner */
+  margin: 20px 0; /* Espaçamento entre a imagem e os textos */
+}
+
+.box-produto p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px; /* Ajustei o tamanho da fonte */
+}
+
+.secao-produtos ul {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none; /* Removi os marcadores da lista */
+}
+
+.secao-produtos li {
+  text-align: left;
+  margin: 5px 0; /* Ajustei o espaçamento */
+  font-size: 18px; /* Ajustei o tamanho da fonte */
+}
+
+@media (max-width: 768px) {
+  .secao-produtos {
+    padding: 60px 20px;
+  }
+  .container-produtos {
+    grid-template-columns: 1fr; /* Define uma coluna para dispositivos menores */
+  }
+  .box-produto h4 {
+    font-size: 22px;
+  }
+  .box-produto img {
+    max-height: 100px; /* Ajusta a altura máxima da imagem para dispositivos menores */
+  }
+  .box-produto p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .secao-produtos {
+    padding: 20px 10px;
+  }
+  .secao-produtos ul {
+    align-items: flex-start;
+  }
+}
